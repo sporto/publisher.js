@@ -1,12 +1,12 @@
 Publisher.JS
-----------------
+===========
 
 A tiny JS library for adding publish / subscribe functionallity to objects (also known as observers or event listeners).
 Tested using Jasmine.js
 
 
 How to use
-============
+----------
 
 Include publisher.js in your page
 
@@ -31,5 +31,5 @@ To broadcast an event:
 Note that params must be send in an array.
 
 To do
-==========
-- Functions for unsubscribe in bulk
+-------
+- Functions to unsubscribe in bulk
