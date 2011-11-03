@@ -20,6 +20,7 @@ To subscribe:
 
 
 To unsubscribe:
+
 	myObject.unsubscribe("actionName", observer.callbackFunction );
 
 
