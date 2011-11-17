@@ -25,7 +25,8 @@ var Publisher = (function(){
 	function publish(name, args) {
 		if (!this.subscribedEvents) return;
 		if (!this.subscribedEvents[name]) return;
-		for (var i = 0; i < this.subscribedEvents[name].length; i++){
+		if(args===undefined) args = []
+		for (var i = 0, len=this.subscribedEvents[name].length; i < len; i++){
 			this.subscribedEvents[name][i].apply(this, args);
 		}
 	}
